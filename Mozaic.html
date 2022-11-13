@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozaic page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            text-align: justify;
+            font-size: 24px;
+        }
+        header {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100px;
+            background: #000000;;
+
+            z-index:3;
+        }
+        .logo {
+            display: flex;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            padding: 30px 0 0 20px;
+        }
+        nav {
+            display:flex;
+            grid-column: 3/4;
+            grid-row: 1/2;
+            justify-content:space-around;
+            background-color: #000000;
+            height: 40px;
+            text-transform: uppercase;
+            padding-left: 1000px;
+            padding-right: 50px;
+        }
+
+        /*VIDEO LAYOUT*/
+        .container1 {
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            overflow:hidden;
+        }
+        .back {
+            grid-column:1/4;
+            grid-row:1/2;
+            z-index: 1;
+            margin-top:100px;
+        }
+        video {
+            object-fit: cover;
+            width: 110vw;
+            height:810px;
+        }
+        .front {
+            height:810px;
+            grid-column:1/4;
+            grid-row:1/2;
+            z-index:2;
+            color:white;
+            font-family:arial,helvetica,sans-serif;
+            font-size:24px;
+            letter-spacing:.2rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        /*ABOUT PAGE*/
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(450px, auto);
+            background-color: #fff;
+            line-height: 1.5;
+        }
+        .about_general_img {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            margin: 100px 50px 20px 70px;
+        }
+        .about_general {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin-left: 80px;
+            margin-top: 70px;
+            margin-right: 40px;
+        }
+        h1 {
+            font-size: 58px;
+            font-weight: bolder;
+        }
+
+        /*COALESENCE*/
+        .container3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+            margin: 40px;
+        }
+        .coalesence{
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        .box {
+            margin: 30px;
+            text-align: center;
+        }
+
+        /*MEMBERS*/
+        * {
+            box-sizing: border-box;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            background-color: #fff;
+            line-height: 1.5;
+            background-color: #000000;
+        }
+        .team2223_img {
+            grid-column: 1/2;
+            margin: 60px;
+        }
+        .team2223 {
+            grid-column: 2/3;
+            margin: 40px;
+        }
+        .white {
+            color: #fff;
+        }
+        .newbies {
+            grid-column: 3/4;
+            margin: 40px;
+        }
+
+        /*EXEC*/
+        .container5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+            margin: 40px;
+        }
+        .box1 {
+            margin: 25px;
+            text-align: center;
+        }
+        .h1_5_1 {
+            text-align: left;
+            line-height: 1.0;
+            font-size: 92px;
+            color: #291c4a;
+            font-weight:1000;
+        }
+        .h1_5_2 {
+            text-align: left;
+            line-height: 1.0;
+            font-size: 120px;
+            color: #291c4a;
+            font-weight:1000;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#homelink"></a><img src="images/mozlogowhite.png" alt="logo">
+        </div>
+        <nav>
+            <div><a href="#aboutlink">About</a></div>
+            <div><a href="#memberlink">Members</a></div>
+            <div><a href="#workshoplink">Workshop</a></div>
+            <div><a href="#auditionlink">Audition</a></div>
+        </nav>
+    </header>
+
+
+    <div class="container1" id="homelink">
+        <div class="back">
+            <video autoplay muted loop poster="images/mozbg.jpg">
+            <source src="videos/coalhomevid.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="front">
+            <h2>COALESENCE XII VIDEOS ARE LIVE</h2>
+        </div>
+    </div>
+
+
+    <div class="container2" id="aboutlink">
+        <div class="about_general_img">
+            <img src="images/about_general.jpg" alt="What is Mozaic Dance Team?">
+        </div>
+        <div class="about_general">
+            <h4>What is</h4>
+            <h1>MOZAIC</h1>
+            <h4>Dance Team?</h4>
+            <p>Mozaic is a competitive open style dance team that performs on and off-campus (ex. Prelude DMV, Momentum, Relay for Life, Operation Season's Cheer, ASU Culture Show); Organization under CMSS (Center for Multicultural Student Services); Host of Coalescence, a dance showcase for collegiate dance crews across the DMV and a second/third/fourth/etc. family :)
+            </p>
+        </div>
+    </div>
+
+
+    <div class="coalesence">
+        <h1>COALESENCE XII</h1>
+    </div>
+    <div class="container3">
+        <div class="box">
+            <img src="images/coal_1.jpg" alt="coal_1">
+        </div>
+        <div class="box">
+            <img src="images/coal_2.jpg" alt="coal_2">
+        </div>
+        <div class="box">
+            <img src="images/coal_3.jpg" alt="coal_3">
+        </div>
+        <div class="box">
+            <img src="images/coal_4.jpg" alt="coal_4">
+        </div>
+        <div class="box">
+            <img src="images/coal_5.jpg" alt="coal_5">
+        </div>
+        <div class="box">
+            <img src="images/mozbg.jpg" alt="coal_6">
+        </div>
+    </div>
+
+
+    <div class="container4" id="memberlink">
+        <div class="team2223_img">
+            <img src="images/team2223.jpg" alt="Mozaic Dance Team 2022-2023">
+        </div>
+        <div class="team2223">
+            <h1 class="white">MEET <br>THE TEAM <br>2022-2023</h1>
+        </div>
+        <div class="newbies">
+            <img src="images/newbies.jpeg" alt="New Bies">
+        </div>
+    </div>
+
+    <div class="container5">
+            <div class="box1">
+                <img src="images/president.png" alt="President - Sophie">
+            </div>
+            <div class="box1">
+                <h1 class="h1_5_1">OUR EXECUTIVE TEAM</h1>
+            </div>
+            <div class="box1">
+                <h1 class="h1_5_2">2022<br>2023</h1>
+            </div>
+            <div class="box1">
+                <img src="images/vd.png" alt="Vice President - Ella">
+            </div>
+            <div class="box1">
+                <img src="images/treasure.png" alt="Treasure - Olivia">
+            </div>
+            <div class="box1">
+                <img src="images/pr.png" alt="Public Relations - Bridgette">
+            </div>
+            <div class="box1">
+                <img src="images/head_ad.png" alt="Head AD - Kellye">
+            </div>
+            <div class="box1">
+                <img src="images/ad_steph.png" alt="AD - Stephen">
+            </div>
+            <div class="box1">
+                <img src="images/ad_harwell.png" alt="AD - Harwell">
+            </div>
+    </div>
+</body>
+</html>
